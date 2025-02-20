@@ -254,8 +254,3 @@ fclose(fp);
 
 ## Conclusion
 This documentation provides a basic overview of important concepts in C programming. For more details, refer to the official C documentation or additional resources.
-
-### References
-- [C Programming Language (K&R)](https://en.wikipedia.org/wiki/The_C_Programming_Language)
-- [GeeksforGeeks - C Programming](https://www.geeksforgeeks.org/c-programming-language/)
-- [TutorialsPoint - C Language](https://www.tutorialspoint.com/cprogramming/index.htm)
