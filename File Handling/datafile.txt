@@ -1,0 +1,1 @@
+In C programming, the exit() function is used to terminate the program immediately. The argument passed to exit() indicates the program's exit status.
