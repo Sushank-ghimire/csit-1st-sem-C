@@ -312,10 +312,10 @@ int main()
     // Call all functions sequentially
 //    question1();
 //    question2();
-    question3();
+//    question3();
 //    question4();
 //    question5();
-//    question6();
+    question6();
 //    question7();
 //    question8();
 //    question9();
