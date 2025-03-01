@@ -310,8 +310,8 @@ void question10()
 int main()
 {
     // Call all functions sequentially
-    question1();
-//    question2();
+//    question1();
+    question2();
 //    question3();
 //    question4();
 //    question5();
