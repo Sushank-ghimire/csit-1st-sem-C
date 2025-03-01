@@ -203,6 +203,7 @@ void question8()
 {
     // Question 8: Write and read even numbers between 10 and 50 to evennumbers.txt
     FILE *file;
+    int i;
     file = fopen("evennumbers.txt", "w");
     if (file == NULL)
     {
@@ -315,9 +316,9 @@ int main()
 //    question3();
 //    question4();
 //    question5();
-    question6();
+//    question6();
 //    question7();
-//    question8();
+    question8();
 //    question9();
 //    question10();
 
