@@ -270,9 +270,8 @@ void question9()
 
 void question10()
 {
-    // Question 10: Store 10 numbers in an array, write to file, and display
     FILE *file;
-    int numbers[10];
+    int numbers[10], i;
 
     printf("Enter 10 numbers: ");
     for (i = 0; i < 10; i++)
@@ -280,23 +279,26 @@ void question10()
         scanf("%d", &numbers[i]);
     }
 
+    // Writing to file
     file = fopen("numbers.txt", "w");
     if (file == NULL)
     {
-        printf("Failed to create numbers.txt.");
+        printf("Failed to create numbers.txt.\n");
         return;
     }
     for (i = 0; i < 10; i++)
     {
-        fprintf(file, "%d", numbers[i]);
+        fprintf(file, "%d\n", numbers[i]);  // Add newline for better readability
     }
     fclose(file);
 
-    printf("Numbers written to numbers.txt. Displaying the content: ");
+    printf("Numbers written to numbers.txt. Displaying the content:\n");
+
+    // Reading from file
     file = fopen("numbers.txt", "r");
     if (file == NULL)
     {
-        printf("Failed to read numbers.txt.");
+        printf("Failed to read numbers.txt.\n");
         return;
     }
     int num;
@@ -304,7 +306,7 @@ void question10()
     {
         printf("%d ", num);
     }
-    printf("    ");
+    printf("\n");
     fclose(file);
 }
 
@@ -318,9 +320,9 @@ int main()
 //    question5();
 //    question6();
 //    question7();
-    question8();
+//    question8();
 //    question9();
-//    question10();
+    question10();
 
     return 0;
 }
